@@ -66,10 +66,7 @@ function resolveModel(model) {
 function json(obj, status = 200) {
   return new Response(JSON.stringify(obj), {
     status,
-    headers: {
-      'content-type': 'application/json',
-      'x-slow-gateway-probe': 'dsh-probe-20261104',
-    },
+    headers: { 'content-type': 'application/json' },
   });
 }
 
